@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Login Page</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wgt@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="download.jpg" alt="pic" width="125px">
+            </div>
+            <nav>
+                <ul id="Menuitems">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="takers.html">Product</a></li>
+                    <li><a href="donors.html">About</a></li>
+                    <li><a href="admin.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        </div>
+<!----account-page-->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="download.jpg" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+                    <form id="loginform" onsubmit="return false">
+                        <input type="text" placeholder="Username" id="uname">
+                        <input type="password" placeholder="Password" id="psw">
+                        <input type="tel" id="phone" name="phone"  placeholder="+91">
+                        <a href="donate2.html">LOGIN</a>
+                    </br>
+                        <a href="reset.html">Forgot password</a> 
+                    </form>
+                    <form id="regform">
+                        <input type="text" placeholder="Username" id=""uname>
+                        <input type="email" placeholder="Email">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+91">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------footer--->
+      <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and IOS mobile phone.</p>
+                    <div class="applogo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col2">
+                    <img src="images/logo-white.png">
+                    <p>Our purpose is to sustainably make the pleasure and benifits of sports Accessible to the Many.</p>
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
